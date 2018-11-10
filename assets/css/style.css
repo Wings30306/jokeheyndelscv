@@ -1,0 +1,402 @@
+
+
+/*Colors--------------------------------------------*/
+body {
+  font-weight: 300;
+}
+
+.bg-color-name-title {
+  
+}
+
+
+
+/*Special Paddings/Margins/Text---------------------------------------------*/
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+.general-sub {
+  font-weight: 300;
+}
+
+.inline-block {
+  display: inline-block
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-column {
+  padding:0 30px 30px;
+  display: block;
+}
+
+.row-table {
+  display: table;
+}
+
+.section-heading {
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+
+/*Header---------------------------------------------*/
+
+header {
+  margin: 0;
+}
+
+.heading {
+  margin-left: 50px;
+}
+
+.logo {
+  background: url("../images/profilepic.JPG");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 360px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.name {
+  font-weight: 100;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+#nav {
+  margin: 0;
+}
+
+#nav li {
+  padding: 0;
+}
+
+.menuitem {
+  height: 120px;
+  text-align: center;
+  padding: 0;
+}
+
+.menuitem a {
+  width: 100%;
+  text-decoration: none;
+  height:120px;
+}
+
+.menuitem a i {
+  padding-top: 22px;
+  display: block;
+  font-size: 28px;
+}
+
+.menuitem a span {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/*Hover.css----------------------------------*/
+
+.active,
+.hvr-sweep-to-bottom:before {
+  height: 120px;
+}
+
+/*Footer---------------------------------------------*/
+footer {
+  min-height: 120px;
+  margin: 0;
+}
+
+#footer-details {
+  margin: 20px;
+  text-align: center;
+}
+
+footer .cv-pdf {
+  text-align:center;
+  font-size: 18px;
+  padding-left: 5px;
+  transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+}
+
+footer .cv-pdf:hover{
+
+}
+
+
+.social-links{
+  padding-bottom:15px;
+}
+
+.social-link li a i {
+  width: 32px;
+  height: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 7px;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+}
+
+.social-link li a i:hover {
+
+}
+
+/* 404 Page */
+.lost {
+  background: url("../images/lost.jpg");
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  text-align: center;
+}
+
+.lost .text{
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: xx-large;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.lost .large {
+  font-size: xx-large;
+}
+
+/*ThreeReasons---------------------------------------------*/
+
+.three-reasons-icon {
+  font-size: 26px;
+}
+
+.three-reasons-heading {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/*PersonalInfo---------------------------------------------*/
+
+.bg-color-personal-info {
+}
+
+.bg-color-download {
+  
+}
+
+.personal-info-item {
+  margin-bottom: 20px;
+  display: block;
+  clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+  padding-right: 8px;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+  margin: 0;
+}
+
+.personal-info-item .key {
+  display: inline-block;
+  width: 30%;
+  margin-right: 21px;
+  padding-top: 2px;
+  vertical-align: top;
+}
+
+.personal-info-item .key p {
+  font-weight: 700;
+}
+
+.personal-info-item .value {
+  display: inline-block;
+  position: relative;
+  width: 60%;
+}
+/*Skills---------------------------------------------*/
+
+.progress {
+  position: relative;
+  height: 25px;
+}
+
+.progress-type {
+  position: absolute;
+  left: 0px;
+  font-size: large;
+  color: whitesmoke;
+  padding: 3px 30px 2px 10px;
+}
+
+.progress-section {
+  margin: 40px 20px;
+}
+
+/*WorkHistory---------------------------------------------*/
+
+.timeline-item {
+  padding: 4em 2em 0em 2em;
+  position: relative;
+  border-left: 1px solid;
+}
+
+.timeline-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::before{
+  content: attr(dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-weight: 500;
+  font-size: 0.8em;
+  padding:0;
+  margin: 0;
+}
+
+.timeline-item::after {
+  width: 12px;
+  height: 12px;
+  display: block;
+  top: 2.4em;
+  position: absolute;
+  left: -6px;
+  border-radius: 50%;
+  content: '';
+  background: #616161;
+}
+
+.history-title{
+  margin: 30px;
+}
+
+/*Contact--------------------------------------*/
+.contact-heading {
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.center-form {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+button:hover{
+  
+}
+
+/*Download--------------------------------------*/
+.download-section {
+  text-align: center;
+}
+
+.download-header {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.download-section a{
+}
+
+.download-section i{
+  font-size: 50px;
+}
+
+.download-section .cv-pdf a{
+  text-decoration: none;
+  transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+}
+
+.download-section .cv-pdf a:hover{
+  
+}
+
+
+
+/*Responsiveness--------------------------------------*/
+@media screen and (min-width: 992px) {
+.section-column {
+  padding:0 30px 30px;
+  float: none;
+  display: table-cell;
+}
+
+.center-form {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.download-section{
+  min-height: 400px
+}
+
+.download-header {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.download-section a{
+  font-size:50px
+}
+
+.download-section i {
+  font-size: 100px
+}
+}
