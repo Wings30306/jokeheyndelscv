@@ -311,10 +311,6 @@ footer .cv-pdf:hover{
   background: #616161;
 }
 
-.history-title{
-  margin: 30px;
-}
-
 /*Contact--------------------------------------*/
 .contact-heading {
   font-weight: 300;
@@ -337,36 +333,32 @@ button:hover{
   
 }
 
-/*Download--------------------------------------*/
-.download-section {
-  text-align: center;
+/*Portfolio--------------------------------------*/
+.repo-list table {
+  border-collapse: separate;
+  display: none;
 }
 
-.download-header {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-weight: 700;
-}
-
-.download-section a{
-}
-
-.download-section i{
-  font-size: 50px;
-}
-
-.download-section .cv-pdf a{
+.repo-list table a {
   text-decoration: none;
-  transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
+  background-color: #616161
 }
 
-.download-section .cv-pdf a:hover{
-  
+.repo-list table a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #616161
 }
 
+th, td {
+  padding: 10px;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: white;
+  border: 5px solid black;
+}
 
 
 /*Responsiveness--------------------------------------*/
@@ -398,5 +390,13 @@ button:hover{
 
 .download-section i {
   font-size: 100px
+}
+
+.repo-list table {
+  display: block;
+}
+
+.repo-list .card {
+  display: none;
 }
 }

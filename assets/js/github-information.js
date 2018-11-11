@@ -29,13 +29,30 @@ function repoInformationHTML (repos) {
                 <td>${repo.description}</td>
                 <td>${repo.language}</td>
                 <td>
-                   <a href="${repo.homepage}" target="_blank">Live site</a></td>
+                   <a href="${repo.homepage}" target="_blank">Live site</a>
+                </td>
               </tr>`
   }
   })
 
-  return `<div class="clearfix repo-list">
-              <table>
+  var listItemsMobile = repos.map(function (repo) {
+    if (repo.homepage != null) {
+    return `<div class="col-xs-12 card">
+              <h5>
+                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+              </h5>
+              <p>${repo.description}</p>
+              <p>${repo.language}</p>
+              <p>
+                <a class="btn btn-primary" href="${repo.homepage}" target="_blank">Live site</a>
+              </p>
+            </div>
+            `
+  }
+  })
+
+  return `<div class="clearfix repo-list container-fluid">
+              <table class="large-screen">
                 <tr>
                   <th>Repo Name</th>
                   <th>Description</th>
@@ -44,6 +61,9 @@ function repoInformationHTML (repos) {
                 </tr>
                   ${listItemsHTML.join('\n')}
               </table>
+              <div class="row mobile">
+                  ${listItemsMobile.join('\n')}
+              </div>
           </div>`
 }
 
