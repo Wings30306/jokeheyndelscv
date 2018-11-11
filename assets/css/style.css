@@ -1,19 +1,17 @@
-
-
 /*Colors--------------------------------------------*/
 body {
   font-weight: 300;
 }
 
 .bg-color-name-title {
-  
 }
-
-
 
 /*Special Paddings/Margins/Text---------------------------------------------*/
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
@@ -22,7 +20,7 @@ h1, h2, h3, h4 {
 }
 
 .inline-block {
-  display: inline-block
+  display: inline-block;
 }
 
 .uppercase {
@@ -30,7 +28,7 @@ h1, h2, h3, h4 {
 }
 
 .section-column {
-  padding:0 30px 30px;
+  padding: 0 30px 30px;
   display: block;
 }
 
@@ -43,7 +41,6 @@ h1, h2, h3, h4 {
   margin-top: 25px;
   margin-bottom: 40px;
 }
-
 
 /*Header---------------------------------------------*/
 
@@ -61,9 +58,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 360px;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .name {
@@ -96,7 +93,7 @@ header {
 .menuitem a {
   width: 100%;
   text-decoration: none;
-  height:120px;
+  height: 120px;
 }
 
 .menuitem a i {
@@ -134,7 +131,7 @@ footer {
 }
 
 footer .cv-pdf {
-  text-align:center;
+  text-align: center;
   font-size: 18px;
   padding-left: 5px;
   transition: all 0.35s ease-in-out;
@@ -143,13 +140,11 @@ footer .cv-pdf {
   -webkit-transition: all 0.35s ease-in-out;
 }
 
-footer .cv-pdf:hover{
-
+footer .cv-pdf:hover {
 }
 
-
-.social-links{
-  padding-bottom:15px;
+.social-links {
+  padding-bottom: 15px;
 }
 
 .social-link li a i {
@@ -167,7 +162,6 @@ footer .cv-pdf:hover{
 }
 
 .social-link li a i:hover {
-
 }
 
 /* 404 Page */
@@ -179,13 +173,13 @@ footer .cv-pdf:hover{
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
   text-align: center;
 }
 
-.lost .text{
+.lost .text {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 900;
@@ -218,7 +212,6 @@ footer .cv-pdf:hover{
 }
 
 .bg-color-download {
-  
 }
 
 .personal-info-item {
@@ -286,7 +279,7 @@ footer .cv-pdf:hover{
   margin: 0;
 }
 
-.timeline-item::before{
+.timeline-item::before {
   content: attr(dates);
   position: absolute;
   left: 2.5em;
@@ -294,7 +287,7 @@ footer .cv-pdf:hover{
   display: block;
   font-weight: 500;
   font-size: 0.8em;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 
@@ -306,7 +299,7 @@ footer .cv-pdf:hover{
   position: absolute;
   left: -6px;
   border-radius: 50%;
-  content: '';
+  content: "";
   background: #616161;
 }
 
@@ -328,8 +321,7 @@ button[type="submit"] {
   margin-bottom: 20px;
 }
 
-button:hover{
-  
+button:hover {
 }
 
 /*Portfolio--------------------------------------*/
@@ -340,16 +332,17 @@ button:hover{
 
 .repo-list table a {
   text-decoration: none;
-  background-color: #616161
+  background-color: #616161;
 }
 
 .repo-list table a:hover {
   text-decoration: none;
   background-color: white;
-  color: #616161
+  color: #616161;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
 }
 
@@ -359,43 +352,42 @@ th, td {
   border: 5px solid black;
 }
 
-
 /*Responsiveness--------------------------------------*/
 @media screen and (min-width: 992px) {
-.section-column {
-  padding:0 30px 30px;
-  float: none;
-  display: table-cell;
-}
+  .section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+  }
 
-.center-form {
-  padding-top: 10px;
-  margin: 0 auto;
-  max-width: 50%;
-}
+  .center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
 
-.download-section{
-  min-height: 400px
-}
+  .download-section {
+    min-height: 400px;
+  }
 
-.download-header {
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
+  .download-header {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 
-.download-section a{
-  font-size:50px
-}
+  .download-section a {
+    font-size: 50px;
+  }
 
-.download-section i {
-  font-size: 100px
-}
+  .download-section i {
+    font-size: 100px;
+  }
 
-.repo-list table {
-  display: block;
-}
+  .repo-list table {
+    display: block;
+  }
 
-.repo-list .card {
-  display: none;
-}
+  .repo-list .card {
+    display: none;
+  }
 }
