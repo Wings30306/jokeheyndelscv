@@ -22,6 +22,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .en {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -40,28 +45,30 @@
               <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem active">
                 <a href="index.html" class="hvr-sweep-to-bottom">
                   <i class="fa fa-home" aria-hidden="true"></i>
-                  <span>Home</span>
+                  <p>Home</p>
                 </a>
               </li>
               <li class="col-xs-6 col-sm-3 ui-menu-color-resume menuitem">
                 <a href="resume.html" class="hvr-sweep-to-bottom">
                   <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                  <span>Resume</span>
-                </a>
-              </li>
+                  <p class="en">Resume</p>
+                  <p class="nl">Werkervaring</p>
+                  </a>
+                </li>
               <li class="col-xs-6 col-sm-3 ui-menu-color-interests menuitem ">
                 <a href="portfolio.html" class="hvr-sweep-to-bottom">
                   <i class="fa fa-folder-open" aria-hidden="true"></i>
-                  <span>Portfolio</span>
+                  <p>Portfolio</p>
                 </a>
               </li>
 
-              <li class="col-xs-6 col-sm-3 ui-menu-color-contact menuitem">
+              <li class="col-xs-6 col-sm-3 ui-menu-color-contact menuitem en">
                 <a href="contact.html" class="hvr-sweep-to-bottom">
                   <i class=" fa fa-envelope" aria-hidden="true"></i>
-                  <span>Contact</span>
-                </a>
-              </li>
+                  <p class="en">Contact</p>
+                  <p class="nl">Contacteer mij</p>
+                  </a>
+                </li>
             </ul>
           </div>
         </div>
@@ -74,13 +81,17 @@
         >
           <div class="row">
             <div class="col-md-12">
-              <h3 class="section-heading uppercase">Personal info</h3>
+              <h3 class="section-heading uppercase en">Personal info</h3>
+              <h3 class="section-heading uppercase nl">Persoonlijke informatie</h3>
+             
               <div class="personal-info-item">
-                <div class="key"><p class="uppercase">name:</p></div>
+                <div class="key"><p class="uppercase en">name:</p><p class="uppercase nl">naam:</p></div>
                 <div class="value"><p>Joke Heyndels</p></div>
               </div>
               <div class="personal-info-item">
-                <div class="key"><p class="uppercase">Town:</p></div>
+                <div class="key">
+                  <p class="uppercase en">Town:</p>
+                  <p class="uppercase nl">Woonplaats:</p></div>
                 <div class="value"><p>Berlaar (Belgium)</p></div>
               </div>
               <div class="personal-info-item">
@@ -95,7 +106,8 @@
         >
           <div class="row">
             <div class="col-md-12">
-              <h3 class="section-heading uppercase">About Me</h3>
+              <h3 class="section-heading uppercase en">About Me</h3>
+              <h3 class="section-heading uppercase nl">Over Mij</h3>
             </div>
           </div>
           <div class="row">
@@ -108,14 +120,16 @@
                   ></i>
                 </div>
                 <div class="col-xs-10 col-sm-10">
-                  <h4 class="three-reasons-heading uppercase">Who am I?</h4>
+                  <h4 class="three-reasons-heading uppercase en">Who am I?</h4>
+                  <h4 class="three-reasons-heading uppercase nl">Wie ben ik?</h4>
                 </div>
                 <div class="col-xs-12">
-                  <p>
+                  <p class="en">
                     I am an aspiring Full Stack Software Developer from Belgium.
                     I am a hard worker with a lot of attention for detail and I
                     am always eager to learn and improve my skills.
                   </p>
+                  <p class="nl">Ik ben een beginnende Full Stack Software Developer uit Berlaar bij Lier. Ik ben een harde werker met veel aandacht voor detail en ik hou ervan bij te leren en mijn vaardigheden te verbeteren</p>
                 </div>
               </div>
             </div>
@@ -128,14 +142,18 @@
                   ></i>
                 </div>
                 <div class="col-xs-10 col-sm-10">
-                  <h4 class="three-reasons-heading uppercase">What do I do?</h4>
+                  <h4 class="three-reasons-heading uppercase en">What do I do?</h4>
+                  <h4 class="three-reasons-heading uppercase nl">Wat doe ik?</h4>
                 </div>
                 <div class="col-xs-12">
-                  <p>
+                  <p class="en">
                     My aim is to create beautiful, user-friendly websites that
                     people love to visit. The best websites are those where you
                     feel welcome and at home, a resting place in the busy
                     landscape that is the internet.
+                  </p>
+                  <p class="nl">
+                    Mijn doel is om mooie, gebruiksvriendelijke website te creëren die mensen graag bezoeken. De beste websites zijn diegenen waar je je welkom en thuis voelt, een rustplaats in het drukke landschap van het internet.
                   </p>
                 </div>
               </div>
@@ -149,16 +167,20 @@
                   ></i>
                 </div>
                 <div class="col-xs-10 col-sm-11">
-                  <h4 class="three-reasons-heading uppercase">My Skills</h4>
+                  <h4 class="three-reasons-heading uppercase en">My Skills</h4>
+                  <h4 class="three-reasons-heading uppercase nl">Wat kan ik?</h4>
                 </div>
 
                 <div class="col-sm-6">
                   <h5 class="three-reasons-heading uppercase">Front End</h5>
-                  <p>
+                  <p class="en">
                     HTML5, CSS3, JavaScript and frameworks such as Bootstrap are
                     well within my skill level. In fact, this entire site was
                     built using those three languages and the Bootstrap
                     framework.
+                  </p>
+                  <p class="nl">
+                    Ik kan heel goed omgaan met HTML5, CSS3, JavaScript en frameworks zoals Bootstrap. In feite is deze hele website opgebouwd met bovenstaande talen en het Bootstrap framework.
                   </p>
                   <div class="progress progress-striped active">
                     <div
@@ -219,11 +241,12 @@
                 </div>
                 <div class="col-sm-6">
                   <h5 class="three-reasons-heading uppercase">Back end</h5>
-                  <p>
+                  <p class="en">
                     Currently familiar with, but not yet as fluent as I would
                     like in Python, Jinja and Flask. Database applications and
                     Django coming soon!
                   </p>
+                  <p class="nl">Momenteel ben ik bekend met, maar nog niet zo vlot als ik zou willen in Python, Jinja en Flask. Database toepassingen en Django komen nog aan bod.</p>
                   <div class="progress progress-striped active">
                     <div
                       class="progress-bar progress-bar-warning"
@@ -293,53 +316,46 @@
     <footer class="container-fluid">
       <div id="footer-details" class="row">
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">About</h5>
-          <p class="inline-block">
-            Aspiring Full-Stack Web Developer. Very detail-oriented.
+          <h5 class="uppercase general-sub en">About</h5>
+          <h5 class="uppercase general-sub nl">Over Mij</h5>
+          <p class="en">
+            Aspiring Full-Stack Software Developer. Very detail-oriented.
           </p>
+          <p class="nl">Beginnende Full Stack Software Developer. Heel detailbewust.</p>
         </div>
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">Download My CV</h5>
-          <p class="inline-block">
+          <h5 class="uppercase general-sub en">Download My CV</h5>
+          <h5 class="uppercase general-sub nl">Download Mijn CV</h5>
+          <p class="en">
             Need a printable version of my CV? Download here!
           </p>
+          <p class="nl">Heb je liever een printvriendelijke versie van mijn CV? Je kan hem hier downloaden.</p>
           <div class="row">
             <a
               href="./assets/pdf/CV Joke Heyndels 2018 - English.pdf"
               target="_blank"
-              class="cv-pdf col-xs-6"
+              class="cv-pdf en"
             >
               <i class="fa fa-download" aria-hidden="true"></i> <br />English</a
             >
             <a
               href="./assets/pdf/CV Joke Heyndels 2018.pdf"
               target="_blank"
-              class="cv-pdf col-xs-6"
+              class="cv-pdf nl"
             >
               <i class="fa fa-download" aria-hidden="true"></i> <br />Dutch</a
             >
           </div>
         </div>
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">My Social</h5>
+          <h5 class="uppercase general-sub en">My Social</h5>
+          <h5 class="uppercase general-sub nl">Sociale netwerken</h5>
           <ul class="list-inline social-link">
             <li>
               <a target="_blank" href=""> <i class="fa fa-facebook"></i> </a>
             </li>
             <li>
-              <a target="_blank" href=""> <i class="fa fa-twitter"></i> </a>
-            </li>
-            <li>
               <a target="_blank" href=""> <i class="fa fa-linkedin"></i> </a>
-            </li>
-            <li>
-              <a target="_blank" href=""> <i class="fa fa-pinterest"></i> </a>
-            </li>
-            <li>
-              <a target="_blank" href=""> <i class="fa fa-instagram"></i> </a>
-            </li>
-            <li>
-              <a target="_blank" href=""> <i class="fa fa-youtube"></i> </a>
             </li>
           </ul>
         </div>

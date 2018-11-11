@@ -105,8 +105,7 @@ header {
   font-size: 28px;
 }
 
-.menuitem a span {
-  display: block;
+.menuitem a p {
   width: 100%;
   padding-top: 5px;
   text-align: center;
