@@ -1,10 +1,10 @@
 function userInformationHTML (user) {
   return `
-      <h2>Find me on Github 
+      <h3>Find me on Github 
           <span class="small-name">
               @ <a href="${user.html_url}" target="_blank">${user.login}</a>
           </span>
-      </h2>
+      </h3>
       <div class="gh-content">
           <div class="gh-avatar">
               <a href="${user.html_url}" target="_blank">
@@ -90,7 +90,7 @@ function fetchGitHubInformation (event) {
     },
     function (errorResponse) {
       if (errorResponse.status === 404) {
-        $('#gh-user-data').html(`<h2>No info found for user ${username}</h2>`)
+        $('#gh-user-data').html(`<h3>No info found for user ${username}</h3>`)
       } else if(errorResponse.status === 403) {
         var resetTime = new Date(errorResponse.getResponseHeader("X-RateLimit-Reset")*1000);
         $("#gh-user-data").html(
