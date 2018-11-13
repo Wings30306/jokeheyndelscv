@@ -2,19 +2,15 @@ function userInformationHTML(user) {
   return `
       <div class="gh-content row">
           <div class="gh-user col-md-4">
-          <h3 class="en">Find me on Github @ 
-            <a href="${user.html_url}" target="_blank">${user.login}</a>
-          </h3>
-          <h3 class="nl">Ik zit ook op Github: 
+          <h3>Github: 
             <a href="${user.html_url}" target="_blank">${user.login}</a>
           </h3>
           <a href="${user.html_url}" target="_blank">
             <img src="${user.avatar_url}" width="50%" alt="${user.login}" />
           </a>
-          <p class="en">Followers: ${user.followers}<br>Following ${user.following} <br> Repos: ${user.public_repos}</p>
-              <p class="nl">Gebruikers die mij volgen: ${
+          <p class=>Followers / Gebruikers die mij volgen: ${
                 user.followers
-              }<br>Gebruikers die ik volg ${user.following} <br> Repos: ${
+              }<br>Following / Gebruikers die ik volg: ${user.following} <br> Repos: ${
     user.public_repos
   }</p>
           </div>
@@ -64,17 +60,12 @@ function repoInformationHTML(repos) {
   return `<div class="clearfix repo-list container-fluid">
               <table class="large-screen">
                 <tr class="en">
-                  <th>Repo Name</th>
-                  <th>Description</th>
-                  <th>Language</th>
-                  <th>Deployed site</th>
+                  <th>Repo Name / Naam</th>
+                  <th>Description / Omschrijving</th>
+                  <th>Language / Taal</th>
+                  <th>View this site / Bekijk de website</th>
                 </tr>
-                <tr class="nl">
-                  <th>Naam</th>
-                  <th>Omschrijving</th>
-                  <th>Taal</th>
-                  <th>Bekijk de Website</th>
-                </tr>
+                
                   ${listItemsHTML.join("\n")}
               </table>
               <div class="row mobile">
