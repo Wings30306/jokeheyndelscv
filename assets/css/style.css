@@ -135,6 +135,7 @@ header {
 footer {
   min-height: 120px;
   margin: 0;
+  background-color: rgba(153, 51, 204, 0.5);
 }
 
 #footer-details {
