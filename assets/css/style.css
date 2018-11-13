@@ -1,8 +1,10 @@
 /*Language Test----------------------------------------*/
-.en {
-  display: none;
+.chosenLang {
+  display: block;
 }
-
+.otherLang {
+  display: hidden;
+}
 
 /*Colors--------------------------------------------*/
 body {
@@ -44,8 +46,7 @@ h4 {
 
 .section-heading {
   font-weight: 300;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin: 25px 0 40px 0;
 }
 
 /*Header---------------------------------------------*/
@@ -80,6 +81,11 @@ header {
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 80px;
+}
+
+.btn-lang {
+  position: absolute;
+  right: 0%;
 }
 
 #nav {
