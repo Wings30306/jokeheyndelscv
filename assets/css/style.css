@@ -9,7 +9,7 @@
 /*Colors--------------------------------------------*/
 body {
   font-weight: 300;
-}
+  }
 
 /*Special Paddings/Margins/Text---------------------------------------------*/
 
@@ -125,7 +125,7 @@ header {
 
 /*Hover.css----------------------------------*/
 
-.active,
+#nav .active,
 .hvr-sweep-to-bottom:before {
   height: 120px;
   background-color: rgb(153, 51, 204);
@@ -275,6 +275,8 @@ footer .cv-pdf:hover {
   margin: 40px 20px;
 }
 
+
+
 /*WorkHistory---------------------------------------------*/
 
 .timeline-item {
@@ -328,6 +330,7 @@ footer .cv-pdf:hover {
 button[type="submit"] {
   margin-top: 15px;
   margin-bottom: 20px;
+  background-color: rgba(153, 51, 204, 0.5);
 }
 
 button:hover {
