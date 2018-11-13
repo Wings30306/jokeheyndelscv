@@ -138,6 +138,10 @@ footer {
   background-color: rgba(153, 51, 204, 0.5);
 }
 
+footer .fa {
+  color: whitesmoke;
+}
+
 #footer-details {
   margin: 20px;
   text-align: center;
@@ -153,7 +157,7 @@ footer .cv-pdf {
   -webkit-transition: all 0.35s ease-in-out;
 }
 
-footer .cv-pdf:hover {
+footer .cv-pdf .fa:hover {
   color: rgb(153, 51, 204);
 }
 
@@ -313,6 +317,20 @@ footer .cv-pdf:hover {
   content: "";
   background: #616161;
 }
+
+.work-history {
+  text-align: center
+}
+.work-history .cv-pdf .fa {
+  font-size: 100px;
+  color: rgba(153, 51, 204, 0.5);
+}
+
+.work-history .cv-pdf .fa:hover {
+  color: rgb(153, 51, 204);
+}
+
+
 
 /*Contact--------------------------------------*/
 .contact-heading {
