@@ -92,6 +92,10 @@ header {
   right: 0%;
 }
 
+.navbar {
+  margin: 0 -15px;
+}
+
 #nav {
   margin: 0;
 }
