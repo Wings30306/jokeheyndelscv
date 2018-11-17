@@ -90,6 +90,10 @@ header {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
+.bg-color-name-title {
+  min-height: 240px;
+}
+
 .name {
   font-weight: 100;
   font-size: 50px;
@@ -120,6 +124,7 @@ header {
   height: 120px;
   text-align: center;
   padding: 0;
+  border: 0;
   background-color: rgba(153, 51, 204, 0.5);
 }
 
