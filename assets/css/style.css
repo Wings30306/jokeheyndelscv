@@ -11,6 +11,11 @@ body {
   font-weight: 300;
   }
 
+html, body, .container-fluid, .row, .col-* {
+  margin: 0;
+  padding: 0;
+}
+
 /*Special Paddings/Margins/Text---------------------------------------------*/
 
 h1,
@@ -140,16 +145,19 @@ footer {
 
 footer .fa {
   color: whitesmoke;
+  font-size: 2em;
 }
 
-#footer-details {
+#footer-details .col-sm-4{
   margin: 20px;
   text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px
 }
 
-footer .cv-pdf {
+footer .fa {
   text-align: center;
-  font-size: 18px;
+  font-size: 2em;
   padding-left: 5px;
   transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
@@ -157,30 +165,12 @@ footer .cv-pdf {
   -webkit-transition: all 0.35s ease-in-out;
 }
 
-footer .cv-pdf .fa:hover {
+footer .fa:hover {
   color: rgb(153, 51, 204);
 }
 
 .social-links {
   padding-bottom: 15px;
-}
-
-.social-link li a i {
-  width: 32px;
-  height: 32px;
-  padding: 12px 0;
-  border-radius: 50%;
-  font-size: 13px;
-  line-height: 7px;
-  text-align: center;
-  transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-}
-
-.social-link li a i:hover {
-  color: rgb(153, 51, 204);
 }
 
 /* 404 Page */
@@ -339,14 +329,16 @@ footer .cv-pdf .fa:hover {
   margin-bottom: 20px;
 }
 
-.center-form {
+.center-form input,
+.center-form textarea {
   padding-top: 10px;
-  margin: 0 auto;
+  margin: 10 auto;
   max-width: 80%;
+  background-color: rgba(153, 51, 204, 0.5)
 }
 
 button[type="submit"] {
-  margin-top: 15px;
+  margin-top: 25px;
   margin-bottom: 20px;
   background-color: rgba(153, 51, 204, 0.5);
 }
@@ -356,6 +348,23 @@ button:hover {
 }
 
 /*Portfolio--------------------------------------*/
+.gh-content img {
+  margin: 25px;
+}
+
+.gh-content img:hover {
+  border: 5px solid rgb(153, 51, 204);
+}
+
+.gh-content a {
+  color: rgba(153, 51, 204, 0.5);
+}
+
+.gh-content a:hover {
+  text-decoration: none;
+  color: rgb(153, 51, 204);
+}
+
 .gh-user {
   text-align: center;
 }
@@ -363,17 +372,6 @@ button:hover {
 .repo-list table {
   border-collapse: separate;
   display: none;
-}
-
-.repo-list table a {
-  text-decoration: none;
-  background-color: #616161;
-}
-
-.repo-list table a:hover {
-  text-decoration: none;
-  background-color: white;
-  color: #616161;
 }
 
 th,
@@ -385,21 +383,34 @@ td {
   border-radius: 20px;
   background-color: rgba(153, 51, 204, 0.5);
   border: 5px solid black;
+  text-align: center;
+}
+
+.card .btn,
+table .btn {
+  margin: 5px;
+  color: whitesmoke;
 }
 
 .card .btn:hover,
-.card a:hover,
-.table a:hover {
-  background-color: rgb(153, 51, 204);
-  text-decoration: none;
+table .btn:hover {
+  border: 1px solid white;
+  color: whitesmoke;
 }
 
 /*Responsiveness--------------------------------------*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 481px) {
   .section-column {
     padding: 0 30px 30px;
     float: none;
     display: table-cell;
+  }
+
+  #footer-details .col-sm-4{
+    margin: 0;
+    text-align: center;
+    border-bottom: 0;
+    padding-bottom: 25px
   }
 
   .center-form {
@@ -432,4 +443,24 @@ td {
   .repo-list .card {
     display: none;
   }
+
+  header {
+    min-height: 35vh;
+  }
+  
+  section {
+    min-height: 45vh;
+  }
+
+  section alert {
+    top: 0;
+    position: absolute;
+  }
+
+  footer {
+    min-height: 10vh;
+    width: 100vw;
+    bottom: 0;
+  }
 }
+

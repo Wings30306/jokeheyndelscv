@@ -28,12 +28,12 @@ function repoInformationHTML(repos) {
     if (repo.homepage != null) {
       return `<tr>
                 <th>
-                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                <a href="${repo.html_url}" target="_blank" class="btn btn-info">${repo.name}</a>
                 </th>
                 <td>${repo.description}</td>
                 <td>${repo.language}</td>
                 <td>
-                   <a href="${repo.homepage}" target="_blank">Live site</a>
+                   <a href="${repo.homepage}" target="_blank" class="btn btn-info">Website</a>
                 </td>
               </tr>`;
     }
@@ -42,15 +42,15 @@ function repoInformationHTML(repos) {
   var listItemsMobile = repos.map(function(repo) {
     if (repo.homepage != null) {
       return `<div class="col-xs-12 card">
-              <h5>
-                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-              </h5>
+              
+              <a href="${repo.html_url}" target="_blank" class="btn btn-info uppercase">${repo.name}</a>
+              
               <p>${repo.description}</p>
               <p>${repo.language}</p>
               <p>
-                <a class="btn btn-primary" href="${
+                <a class="btn btn-info" href="${
                   repo.homepage
-                }" target="_blank">Live site</a>
+                }" target="_blank">Website</a>
               </p>
             </div>
             `;
