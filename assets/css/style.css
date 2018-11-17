@@ -11,9 +11,10 @@ body {
   font-weight: 300;
   }
 
-html, body, .container-fluid, .row, .col-* {
+html, body, .container-fluid, .row {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*Special Paddings/Margins/Text---------------------------------------------*/
