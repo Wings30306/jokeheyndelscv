@@ -84,6 +84,5 @@ function checkLocalStorage() {
             changeLanguage('eng')
         }
     }
-    console.log('I went off');
 }
 checkLocalStorage();

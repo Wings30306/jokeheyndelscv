@@ -7,12 +7,18 @@
 }
 
 /*Colors--------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-weight: 300;
-  overflow-x: hidden;
+  color: lightgrey;
+  width: 100%;
+  box-sizing: border-box;
   }
 
-html, body, .container-fluid, .row {
+html, body, .container-fluid, .row, .col-sm-4, .col-md-4, .col-md-8, .col-xs-9, .col-xs-3, .col-xs-12 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -88,12 +94,8 @@ header {
 }
 
 .btn-lang {
-  position: absolute;
-  right: 0%;
-}
-
-.navbar {
-  margin: 0 -15px;
+  margin: 10px;
+  float: right;
 }
 
 #nav {
@@ -137,9 +139,10 @@ header {
 /*Hover.css----------------------------------*/
 
 #nav .active,
-.hvr-sweep-to-bottom:before {
+#nav .hvr-sweep-to-bottom:before {
   height: 120px;
   background-color: rgb(153, 51, 204);
+  color: rgba(153, 51, 204, 0.5);
 }
 
 /*Footer---------------------------------------------*/
@@ -319,11 +322,11 @@ footer .fa:hover {
 }
 .work-history .cv-pdf .fa {
   font-size: 100px;
-  color: rgba(153, 51, 204, 0.5);
+  color: rgb(153, 51, 204);
 }
 
 .work-history .cv-pdf .fa:hover {
-  color: rgb(153, 51, 204);
+  color: rgba(153, 51, 204, 0.5);
 }
 
 
@@ -339,8 +342,9 @@ footer .fa:hover {
 .center-form textarea {
   padding-top: 10px;
   margin: 10 auto;
-  max-width: 80%;
-  background-color: rgba(153, 51, 204, 0.5)
+  max-width: 100%;
+  background-color: rgba(153, 51, 204, 0.5);
+  color: lightgrey;
 }
 
 button[type="submit"] {
@@ -354,6 +358,11 @@ button:hover {
 }
 
 /*Portfolio--------------------------------------*/
+.alert {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .gh-content img {
   margin: 25px;
 }
@@ -363,12 +372,12 @@ button:hover {
 }
 
 .gh-content a {
-  color: rgba(153, 51, 204, 0.5);
+  color: rgb(153, 51, 204);
 }
 
 .gh-content a:hover {
   text-decoration: none;
-  color: rgb(153, 51, 204);
+  color: rgba(153, 51, 204, 0.5);
 }
 
 .gh-user {
@@ -444,6 +453,7 @@ table .btn:hover {
 
   .repo-list table {
     display: block;
+    max-width: 60vw;
   }
 
   .repo-list .card {
@@ -465,7 +475,7 @@ table .btn:hover {
 
   footer {
     min-height: 10vh;
-    width: 100vw;
+    width: 100%;
     bottom: 0;
   }
 }
