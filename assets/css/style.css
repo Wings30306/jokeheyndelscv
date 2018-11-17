@@ -467,15 +467,6 @@ table .btn:hover {
     font-size: 100px;
   }
 
-  .repo-list table {
-    display: block;
-    max-width: 60vw;
-  }
-
-  .repo-list .card {
-    display: none;
-  }
-
   header {
     min-height: 35vh;
   }
@@ -493,5 +484,16 @@ table .btn:hover {
     min-height: 10vh;
     width: 100%;
     bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .repo-list table {
+    display: block;
+    max-width: 60vw;
+  }
+
+  .repo-list .card {
+    display: none;
   }
 }
