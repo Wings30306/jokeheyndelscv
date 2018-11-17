@@ -9,6 +9,7 @@
 /*Colors--------------------------------------------*/
 body {
   font-weight: 300;
+  overflow-x: hidden;
   }
 
 html, body, .container-fluid, .row {
