@@ -110,6 +110,7 @@ header {
 .btn-lang {
   margin: 10px;
   float: right;
+  white-space: normal;
 }
 
 #nav {
@@ -163,7 +164,7 @@ header {
 /*Footer---------------------------------------------*/
 footer {
   min-height: 120px;
-  margin: 0;
+  margin: 50px 0 0 0;
   background-color: rgba(153, 51, 204, 0.5);
 }
 
@@ -413,8 +414,9 @@ td {
 .card {
   border-radius: 20px;
   background-color: rgba(153, 51, 204, 0.5);
-  border: 5px solid black;
+  border:10px solid black;
   text-align: center;
+  height: 250px;
 }
 
 .card .btn,
@@ -473,7 +475,7 @@ table .btn:hover {
 
   section .alert {
     top: 0;
-    position: absolute;
+    position: relative;
   }
 
   footer {

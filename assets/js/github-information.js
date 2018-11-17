@@ -41,7 +41,7 @@ function repoInformationHTML(repos) {
 
   var listItemsMobile = repos.map(function(repo) {
     if (repo.homepage != null) {
-      return `<div class="col-xs-12 card">
+      return `<div class="col-xs-12 col-sm-6 card">
               
               <a href="${repo.html_url}" target="_blank" class="btn btn-info uppercase">${repo.name}</a>
               
