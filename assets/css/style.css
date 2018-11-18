@@ -224,6 +224,11 @@ footer .fa:hover {
   font-size: xx-large;
 }
 
+.lost .btn {
+  visibility: hidden;
+  height: 1px;
+}
+
 /*ThreeReasons---------------------------------------------*/
 
 .three-reasons-icon {
