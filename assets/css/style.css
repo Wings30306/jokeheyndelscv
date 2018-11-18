@@ -20,6 +20,7 @@ body {
 
 html,
 body,
+section,
 div {
   margin: 0;
   padding: 0;
@@ -32,6 +33,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 section {
@@ -194,9 +196,10 @@ footer .fa:hover {
 }
 
 /* 404 Page */
+
 .go-home-link {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 1000;
   position: absolute;
 }
@@ -218,8 +221,8 @@ footer .fa:hover {
 .lost .text {
   text-decoration: none;
   color: whitesmoke;
-  font-weight: 900;
-  font-size: xx-large;
+  font-weight: 500;
+  font-size: 1em;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -228,7 +231,7 @@ footer .fa:hover {
 }
 
 .lost .large {
-  font-size: xx-large;
+  font-size: large;
 }
 
 .lost .btn {
