@@ -20,22 +20,13 @@ body {
 
 html,
 body,
-.container-fluid,
-.row,
-.col-sm-4,
-.col-md-4,
-.col-md-8,
-.col-xs-9,
-.col-xs-3,
-.col-xs-12,
-.col-sm-6 {
+div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /*Special Paddings/Margins/Text---------------------------------------------*/
-
 h1,
 h2,
 h3,
@@ -81,7 +72,7 @@ header {
 }
 
 .heading {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .logo {
@@ -386,6 +377,12 @@ button:hover {
 /*Portfolio--------------------------------------*/
 .alert {
   box-sizing: border-box;
+  width: 100%;
+}
+
+#loader img {
+  margin: 0 auto;
+  display: block;
   width: 100%;
 }
 
