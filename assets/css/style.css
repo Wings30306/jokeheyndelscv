@@ -282,6 +282,15 @@ footer .fa:hover {
   position: relative;
   width: 60%;
 }
+
+.LI-badge-container-horizontal-dark {
+  width: 100%;
+  border: 5px solid rgb(153, 51, 204);
+  border-radius: 10%;
+  background-color: black;
+  margin: 0 auto;
+}
+
 /*Skills---------------------------------------------*/
 
 .progress {
