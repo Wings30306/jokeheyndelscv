@@ -194,6 +194,12 @@ footer .fa:hover {
 }
 
 /* 404 Page */
+.go-home-link {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
 .lost {
   background: url("../images/lost.jpg");
   background-color: rgba(0, 0, 0, 0.4);
