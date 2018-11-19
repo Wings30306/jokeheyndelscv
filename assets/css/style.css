@@ -196,7 +196,19 @@ footer .fa:hover {
 .social-links img {
   height: 2em;
   margin-bottom: 15px;
-  background-color: white
+  background-color: white;
+  transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+}
+
+
+
+.social-links img:hover {
+  height: 2em;
+  margin-bottom: 15px;
+  background-color: rgba(153, 51, 204, 0.5)
 }
 
 /* 404 Page */
