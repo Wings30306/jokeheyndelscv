@@ -194,8 +194,9 @@ footer .fa:hover {
 
 
 .social-links img {
-  height: 2.5em;
-  padding-bottom: 10px;
+  height: 2em;
+  margin-bottom: 15px;
+  background-color: white
 }
 
 /* 404 Page */
