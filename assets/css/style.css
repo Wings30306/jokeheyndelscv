@@ -191,8 +191,11 @@ footer .fa:hover {
   color: rgb(153, 51, 204);
 }
 
-.social-links {
-  padding-bottom: 15px;
+
+
+.social-links img {
+  height: 2.5em;
+  padding-bottom: 10px;
 }
 
 /* 404 Page */
