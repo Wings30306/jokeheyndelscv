@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 body {
   font-weight: 300;
   color: lightgrey;
@@ -56,10 +60,6 @@ section {
   padding: 15px;
   display: block;
   padding-bottom: 25px
-}
-
-.row-table {
-  display: table;
 }
 
 .section-heading {
@@ -256,6 +256,10 @@ footer .fa:hover {
 }
 
 /*ThreeReasons---------------------------------------------*/
+
+.row-table {
+  display: block;
+}
 
 .three-reasons-icon {
   font-size: 26px;
@@ -482,12 +486,6 @@ table .btn:hover {
   .bg-color-name-title .col-sm-6 {
     padding: 0;
   }
-  .section-column,
-  .section-column .row .col-sm-6 {
-    padding: 0 15px 15px;
-    float: none;
-    display: table-cell;
-  }
 
   #footer-details .col-sm-4 {
     margin: 0;
@@ -527,7 +525,12 @@ table .btn:hover {
   footer {
     min-height: 10vh;
     width: 100%;
-    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row-table {
+    display: table;
   }
 }
 
