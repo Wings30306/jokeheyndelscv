@@ -242,10 +242,10 @@ footer .fa:hover {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 500;
-  font-size: 3em;
+  font-size: 2.5em;
   position: relative;
   left: 50%;
-  top: 80%;
+  top: 90%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
