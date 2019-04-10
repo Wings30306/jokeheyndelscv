@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,41 +22,146 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      html {
-        overflow: hidden;
-      }
-    </style>
   </head>
+
   <body>
-    <section>
-      <a class="go-home-link" href="index.html"></a>
-      <div class="lost">
-        <a
-          class="btn btn-info btn-lang"
-          id="change-language-link"
-          data-lang="eng"
-          style="cursor: pointer"
-          >View this site in English</a
-        >
-        <div class="en text">
-          <p class="xl">Page Not Found</p>
-          <h2>Hmm.. Looks like you've gone off the beaten path.</h2>
-          <h5>
-            Don't worry. Jo is looking into it. Click anywhere on this page to
-            head back home.
-          </h5>
-        </div>
-        <div class="nl text">
-          <p class="xl">Pagina Niet Gevonden</p>
-          <h2>Oeps, blijkbaar ben je verdwaald in het bos!</h2>
-          <h5>
-            Klik eender waar op deze pagina om terug naar de hoofdpagina te
-            gaan.
-          </h5>
+    <header class="container-fluid">
+      <div class="row">
+        <a href="index.html"> <div class="col-sm-6 col-md-4 logo"></div> </a>
+        <div class="col-sm-6 col-md-8">
+          <div class="row bg-color-name-title">
+            <div class="col-xs-12 col-md-10">
+              <div class="heading">
+                <h1 class="name">Joke Heyndels</h1>
+                <h2 class="title">Full Stack Developer</h2>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+              <a
+                class="btn btn-info btn-lang"
+                id="change-language-link"
+                data-lang="eng"
+                style="cursor: pointer"
+                >View this site in English</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <ul id="nav" class="list-inline clearfix">
+              <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
+                <a href="index.html" class="hvr-sweep-to-bottom">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-3 ui-menu-color-resume menuitem active"
+              >
+                <a href="resume.html" class="hvr-sweep-to-bottom">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  <p class="en">Resume</p>
+                  <p class="nl">Werkervaring</p>
+                </a>
+              </li>
+              <li class="col-xs-6 col-sm-3 ui-menu-color-interests menuitem">
+                <a href="portfolio.html" class="hvr-sweep-to-bottom">
+                  <i class="fa fa-folder-open" aria-hidden="true"></i>
+                  <p>Portfolio</p>
+                </a>
+              </li>
+
+              <li class="col-xs-6 col-sm-3 ui-menu-color-contact menuitem">
+                <a href="contact.html" class="hvr-sweep-to-bottom">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <p class="en">Contact</p>
+                  <p class="nl">Contacteer mij</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </header>
+    <section class="container-fluid">
+      <a href="index.html">
+        <div class="lost">
+          <h2 class="en text">
+            Oops, you seem to have got lost! Let Octocat Jo bring you home
+            safely!
+          </h2>
+          <h2 class="nl text">
+            Oeps, ben je verloren gelopen? Laat Octocat Joke je veilig
+            terugbrengen!
+          </h2>
+        </div>
+      </a>
     </section>
+    <footer class="container-fluid">
+      <div id="footer-details" class="row">
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub en">About</h5>
+          <h5 class="uppercase general-sub nl">Over Mij</h5>
+          <p class="en">
+            Aspiring Full-Stack Software Developer. Very detail-oriented.
+          </p>
+          <p class="nl">
+            Beginnende Full Stack Software Developer. Heel detailbewust.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub en">Download My CV</h5>
+          <h5 class="uppercase general-sub nl">Download Mijn CV</h5>
+          <p class="en">Need a printable version of my CV? Download here!</p>
+          <p class="nl">
+            Heb je liever een printvriendelijke versie van mijn CV? Je kan hem
+            hier downloaden.
+          </p>
+          <div class="row">
+            <a
+              href="assets/pdf/joke-heyndels-cv2018en.pdf"
+              target="_blank"
+              class="cv-pdf en"
+            >
+              <i class="fa fa-download" aria-hidden="true"></i>
+            </a>
+            <a
+              href="assets/pdf/joke-heyndels-cv2018nl.pdf"
+              target="_blank"
+              class="cv-pdf nl"
+            >
+              <i class="fa fa-download" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub en">My Networks</h5>
+          <h5 class="uppercase general-sub nl">Mijn Netwerken</h5>
+          <ul class="list-inline social-links">
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/joke-heyndels-8a8532167/"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/wings30306">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://repl.it/@wings30306">
+                <img
+                  src="https://repl.it/public/images/logo-small.png"
+                  alt="Replit"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/language.js"></script>

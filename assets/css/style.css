@@ -31,6 +31,10 @@ div {
   box-sizing: border-box;
 }
 
+.col-md-6 {
+  padding-bottom: 2em;
+}
+
 /*Special Paddings/Margins/Text---------------------------------------------*/
 h1,
 h2,
@@ -221,13 +225,13 @@ footer .fa:hover {
 }
 
 .lost {
-  background: url("../images/lost.jpg");
+  background: url("../images/octocat.png");
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: contain;
+  height: 50vh;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -238,12 +242,21 @@ footer .fa:hover {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 500;
-  font-size: 1em;
-  position: absolute;
+  font-size: 3em;
+  position: relative;
   left: 50%;
-  top: 50%;
+  top: 80%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+a {
+  color: rgb(153, 51, 204);
+}
+
+a .lost .text:hover {
+  color: rgb(153, 51, 204);
+  text-decoration: none
 }
 
 .lost .large {
