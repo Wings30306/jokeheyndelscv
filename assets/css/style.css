@@ -445,7 +445,12 @@ button:hover {
 
 .gh-content img {
   margin: 25px;
+  width: 50%;
+  border-radius: 25%;
+  border: 5px solid #616161;
 }
+
+
 
 .gh-content img:hover {
   border: 5px solid rgb(153, 51, 204);

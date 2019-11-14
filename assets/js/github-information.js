@@ -6,7 +6,7 @@ function userInformationHTML(user) {
             <a href="${user.html_url}" target="_blank">${user.login}</a>
           </h3>
           <a href="${user.html_url}" target="_blank">
-            <img src="${user.avatar_url}" width="50%" alt="${user.login}" />
+            <img src="${user.avatar_url}" alt="${user.login}" />
           </a>
           <p class=>Followers / Gebruikers die mij volgen: ${
                 user.followers
