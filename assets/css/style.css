@@ -11,7 +11,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
@@ -63,7 +64,7 @@ section {
 .section-column {
   padding: 15px;
   display: block;
-  padding-bottom: 25px
+  padding-bottom: 25px;
 }
 
 .section-heading {
@@ -195,8 +196,6 @@ footer .fa:hover {
   color: rgb(153, 51, 204);
 }
 
-
-
 .social-links img {
   height: 2em;
   margin-bottom: 15px;
@@ -207,12 +206,10 @@ footer .fa:hover {
   -webkit-transition: all 0.35s ease-in-out;
 }
 
-
-
 .social-links img:hover {
   height: 2em;
   margin-bottom: 15px;
-  background-color: rgba(153, 51, 204, 0.5)
+  background-color: rgba(153, 51, 204, 0.5);
 }
 
 /* 404 Page */
@@ -256,7 +253,7 @@ a {
 
 a .lost .text:hover {
   color: rgb(153, 51, 204);
-  text-decoration: none
+  text-decoration: none;
 }
 
 .lost .large {
@@ -450,8 +447,6 @@ button:hover {
   border: 5px solid #616161;
 }
 
-
-
 .gh-content img:hover {
   border: 5px solid rgb(153, 51, 204);
 }
@@ -469,22 +464,12 @@ button:hover {
   text-align: center;
 }
 
-.repo-list table {
-  border-collapse: separate;
-  display: none;
-}
-
-th,
-td {
-  padding: 10px;
-}
-
 .card {
   border-radius: 20px;
   background-color: rgba(153, 51, 204, 0.5);
-  border:10px solid black;
+  border: 10px solid black;
   text-align: center;
-  height: 250px;
+  height: 100%;
 }
 
 .card .btn,
@@ -531,7 +516,7 @@ table .btn:hover {
     font-size: 100px;
   }
 
-   section {
+  section {
     min-height: 45vh;
   }
 
@@ -543,22 +528,5 @@ table .btn:hover {
   footer {
     min-height: 10vh;
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .row-table {
-    display: table;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .repo-list table {
-    display: block;
-    max-width: 60vw;
-  }
-
-  .repo-list .card {
-    display: none;
   }
 }

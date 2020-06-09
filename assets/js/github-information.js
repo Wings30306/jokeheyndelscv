@@ -24,29 +24,15 @@ function repoInformationHTML(repos) {
     return `<div class="clearfix repo-list">No repos!</div>`;
   }
 
-  var listItemsHTML = repos.map(function(repo) {
-    if (repo.homepage != null) {
-      return `<tr>
-                <th>
-                <a href="${repo.html_url}" target="_blank" class="btn btn-info">${repo.name}</a>
-                </th>
-                <td>${repo.description}</td>
-                <td>${repo.language}</td>
-                <td>
-                   <a href="${repo.homepage}" target="_blank" class="btn btn-info">Website</a>
-                </td>
-              </tr>`;
-    }
-  });
 
   var listItemsMobile = repos.map(function(repo) {
-    if (repo.homepage != null) {
+    if (repo.homepage != null && repo.description.length > 100) {
+      console.log(repo)
       return `<div class="col-xs-12 col-sm-6 card">
               
               <a href="${repo.html_url}" target="_blank" class="btn btn-info uppercase">${repo.name}</a>
               
               <p>${repo.description}</p>
-              <p>${repo.language}</p>
               <p>
                 <a class="btn btn-info" href="${
                   repo.homepage
@@ -58,17 +44,7 @@ function repoInformationHTML(repos) {
   });
 
   return `<div class="clearfix repo-list container-fluid">
-              <table class="large-screen">
-                <tr class="en">
-                  <th>Repo Name / Naam</th>
-                  <th>Description / Omschrijving</th>
-                  <th>Language / Taal</th>
-                  <th>View this site / Bekijk de website</th>
-                </tr>
-                
-                  ${listItemsHTML.join("\n")}
-              </table>
-              <div class="row mobile">
+              <div class="row">
                   ${listItemsMobile.join("\n")}
               </div>
           </div>`;
@@ -77,7 +53,6 @@ function repoInformationHTML(repos) {
 function fetchGitHubInformation(event) {
   $("#gh-user-data").html("");
   $("#gh-repo-data").html("");
-  var username = "wings30306";
 
   $("#gh-user-data").html(
     `<div id="loader">
@@ -86,8 +61,8 @@ function fetchGitHubInformation(event) {
   );
 
   $.when(
-    $.getJSON(`https://api.github.com/users/${username}`),
-    $.getJSON(`https://api.github.com/users/${username}/repos`)
+    $.getJSON(`https://api.github.com/users/wings30306`),
+    $.getJSON(`https://api.github.com/users/wings30306/repos`)
   ).then(
     function(firstResponse, secondResponse) {
       var userData = firstResponse[0];
