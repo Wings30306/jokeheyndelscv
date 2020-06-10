@@ -25,7 +25,7 @@ async function loadProjects() {
         .join("\n")
     )
 
-  projectDiv.innerHTML = projects
+  projectDiv.innerHTML = `<div class="row row-table">${projects}</div>`
 }
 
 

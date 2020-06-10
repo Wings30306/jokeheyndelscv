@@ -10,7 +10,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
 }
 
 html,
@@ -23,6 +22,8 @@ body {
   color: lightgrey;
   width: 100%;
   box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
 }
 
 html,
@@ -171,6 +172,8 @@ footer {
   margin: 50px 0 0 0;
   background-color: rgba(153, 51, 204, 0.5);
 }
+
+
 
 footer .fa {
   color: whitesmoke;
@@ -466,19 +469,18 @@ button:hover {
 .card {
   border-radius: 20px;
   background-color: rgba(153, 51, 204, 0.5);
-  border: 10px solid black;
+  border: 1px solid black;
   text-align: center;
-  height: 100%;
 }
 
-.card .btn,
-table .btn {
+.card .btn {
   margin: 5px;
   color: whitesmoke;
+  max-width: 100%;
+  white-space: normal;
 }
 
-.card .btn:hover,
-table .btn:hover {
+.card .btn:hover{
   border: 1px solid white;
   color: whitesmoke;
 }
