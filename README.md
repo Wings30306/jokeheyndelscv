@@ -1,1 +1,3 @@
-"# jokeheyndelsresume" 
+# Joke Heyndels CV
+
+Hey everyone, welcome to my online resume! This is a pure front-end project made with HTML, CSS and JavaScript. As I'm based in the Flemish Region of Belgium, I've chosen to make it bilingual so you can see it in my native language Dutch as well as in English. This was done using JavaScript to hide or show the language classes based on whether a user clicked the switch language button. It also uses localstorage to remember the chosen language so the user doesn't have to click the button every time they go to a new page on the site.
