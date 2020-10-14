@@ -175,11 +175,6 @@ footer {
 
 
 
-footer .fa {
-  color: whitesmoke;
-  font-size: 2em;
-}
-
 #footer-details .col-sm-4 {
   margin: 20px;
   text-align: center;
@@ -187,7 +182,8 @@ footer .fa {
   padding-bottom: 5px;
 }
 
-footer .fa {
+footer .fas, footer .fab {
+  color: lightgrey;
   text-align: center;
   font-size: 2em;
   padding-left: 5px;
@@ -385,7 +381,7 @@ a .lost .text:hover {
 .work-history {
   text-align: center;
 }
-.work-history .cv-pdf .fa {
+.work-history .cv-pdf .fas {
   font-size: 3em;
   color: rgb(153, 51, 204);
 }
