@@ -15,7 +15,7 @@ async function loadProjects() {
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
-    <p>${repo.description_nl}</p>
+    <p class="description">${repo.description_nl}</p>
     <p>
       <a class="btn btn-info" href="${repo.code_link}" target="_blank">
       <i class="fab fa-github"></i>&nbsp CODE</a>
@@ -36,7 +36,7 @@ async function loadProjects() {
         <div class="col-12 col-sm-6 col-md-4 col-lg-4 card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
-    <p>${repo.description}</p>
+    <p class="description">${repo.description}</p>
     <p>
       <a class="btn btn-info" href="${repo.code_link}" target="_blank">
       <i class="fab fa-github"></i>&nbsp CODE</a>
@@ -46,7 +46,7 @@ async function loadProjects() {
         )
         .join("\n")
     )
-
+    
     projectDivNL.innerHTML = `<div class="row row-table">${projectsNl}</div>`
     projectDivEN.innerHTML = `<div class="row row-table">${projectsEn}</div>`
   }
