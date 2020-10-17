@@ -1,4 +1,4 @@
-/*Language Test----------------------------------------*/
+/*Language Default----------------------------------------*/
 .nl {
   display: block;
 }
@@ -7,10 +7,7 @@
 }
 
 /*Colors--------------------------------------------*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+
 
 html,
 body {
@@ -28,8 +25,7 @@ body {
 
 html,
 body,
-section,
-div {
+section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -467,6 +463,8 @@ button:hover {
   background-color: rgba(153, 51, 204, 0.5);
   border: 1px solid black;
   text-align: center;
+  margin: 5px;
+  padding: 10px;
 }
 
 .card .description {
