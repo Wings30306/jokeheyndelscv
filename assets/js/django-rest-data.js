@@ -1,18 +1,18 @@
 const projectDivNL = document.getElementById("project-content-nl");
 const projectDivEN = document.getElementById("project-content-en");
 
-
 const url = "https://jh-portfolio-api.herokuapp.com/projects/";
 
 async function loadProjects() {
   let projectsNl = await fetch(url)
-    .then(response => response.json())
-    .then(data => data.results)
-    .then(data =>
+    .then((response) => response.json())
+    .then((data) => data.results)
+    .then((data) =>
       data
         .map(
           (repo) => `
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 card">
+          <div class="col-12">
+        <div class="card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
     <p class="description">${repo.description_nl}</p>
@@ -21,19 +21,21 @@ async function loadProjects() {
       <i class="fab fa-github"></i>&nbsp CODE</a>
     </p>
   </div>
+  </div>
   `
         )
         .join("\n")
-    )
+    );
 
-    let projectsEn = await fetch(url)
-    .then(response => response.json())
-    .then(data => data.results)
-    .then(data =>
+  let projectsEn = await fetch(url)
+    .then((response) => response.json())
+    .then((data) => data.results)
+    .then((data) =>
       data
         .map(
           (repo) => `
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 card">
+          <div class="col-12">
+        <div class="card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
     <p class="description">${repo.description}</p>
@@ -41,19 +43,17 @@ async function loadProjects() {
       <a class="btn btn-info" href="${repo.code_link}" target="_blank">
       <i class="fab fa-github"></i>&nbsp CODE</a>
     </p>
-  </div>
+    </div>
+    </div>
   `
         )
         .join("\n")
-    )
-    
-    projectDivNL.innerHTML = `<div class="row row-table">${projectsNl}</div>`
-    projectDivEN.innerHTML = `<div class="row row-table">${projectsEn}</div>`
-  }
+    );
 
-loadProjects()
+  projectDivNL.innerHTML = `<div class="row">${projectsNl}</div>`;
+  projectDivEN.innerHTML = `<div class="row">${projectsEn}</div>`;
+}
 
+loadProjects();
 
-
-
-loadProjects()
+loadProjects();
