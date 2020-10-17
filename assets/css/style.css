@@ -469,6 +469,10 @@ button:hover {
   text-align: center;
 }
 
+.card .description {
+  white-space: pre-wrap;
+}
+
 .card .btn {
   margin: 5px;
   color: whitesmoke;
