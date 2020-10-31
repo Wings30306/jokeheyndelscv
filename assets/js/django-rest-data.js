@@ -1,6 +1,18 @@
 const projectDivNL = document.getElementById("project-content-nl");
 const projectDivEN = document.getElementById("project-content-en");
 
+projectDivNL.innerHTML = (
+  `<div id="loader">
+    <img src="https://i.gifer.com/D1iW.gif" alt="wordt geladen..." />
+  </div>`
+);
+
+projectDivEN.innerHTML = (
+  `<div id="loader">
+    <img src="https://i.gifer.com/D1iW.gif" alt="loading..." />
+  </div>`
+);
+
 const url = "https://jh-portfolio-api.herokuapp.com/projects/";
 
 async function loadProjects() {
