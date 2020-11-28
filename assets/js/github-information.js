@@ -21,7 +21,7 @@ function userInformationHTML(user) {
 
 
 
-function fetchGitHubInformation(event) {
+function fetchGitHubInformation() {
   $("#gh-user-data").html("");
   $("#gh-repo-data").html("");
 
