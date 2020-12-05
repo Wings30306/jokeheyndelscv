@@ -23,7 +23,7 @@ async function loadProjects() {
       data
         .map(
           (repo) => `
-          <div class="col-12">
+          <div class="col-xs-12">
         <div class="card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
@@ -46,7 +46,7 @@ async function loadProjects() {
       data
         .map(
           (repo) => `
-          <div class="col-12">
+          <div class="col-xs-12">
         <div class="card">
               
     <a href="${repo.live_link}" target="_blank" class="btn btn-info uppercase">${repo.title}</a>
